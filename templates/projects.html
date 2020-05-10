@@ -1,0 +1,35 @@
+{% extends "core_content.html" %}
+
+{% block content %}
+    <div class="jumbo-adjust">
+        <h1 class="display-4" style=>Personal Projects</h1>
+        <p class="lead">Here you'll find a listing of my personal projects as well as links to repos and demos where available</p>
+        <hr class="my-4 bg-light">
+        <table class="table table-hover table-dark table-bordered" id="dark-table">
+            <thead style="background-color: #111214;">
+                <th scope="col">Project Name</th>
+                <th scope="col">Brief Description</th>
+                <th scope="col">Technologies Used</th>
+                <th scope="col" style="width: 20%">Links</th>
+            </thead>
+                {% for item in projects %}
+                <tr class="roboto">
+                    <td class="align-middle" onclick="loadProjectPage('{{ item.name }}')">{{ item.name }}</td>
+                    <td class="align-middle" onclick="loadProjectPage('{{ item.name }}')">{{ item.desc }}</td>
+                    <td class="align-middle" onclick="loadProjectPage('{{ item.name }}')">{{ ', '.join(item.tech_stack) }}</td>
+                    <td class="align-middle">
+                        <div class="form-row">
+                            <a target="_blank" class="btn btn-outline-info btn-sm col marginalize" href="{{ item.github }}" style="width: 50%;">{{ item.service_name }}</a>
+                            {% if item.has_other_source %}
+                                <a target="_blank" class="btn btn-outline-warning btn-sm in-line col marginalize" href="{{ item.other_source }}" style="width: 50%;">{{ item.source_name }}</a>
+                            {% else %}
+                                <a target="_blank" class="btn btn-outline-info btn-sm marginalize" href="{{ item.github }}" style="width: 50%;" hidden>{{ item.service_name }}</a>
+                            {% endif %}
+                        </div>
+                    </td>
+
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: jura;
+    src: url("Jura-Regular.ttf");
+}
+
+body {
+    background-image: url("alex-wong-l5Tzv1alcps-unsplash.jpg");
+    background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+}
+
+#dark-table{
+    background-color: #1a1c1f;
+}
+
+.jura {
+    font-family: jura, sans-serif;
+}
+
+.navbar > .btn.btn-outline-info.jura {
+    padding: .375rem .6rem;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.navbar-nav > li > div > a:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.navbar-nav > li > div > a {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.jumbotron {
+    font-family: Roboto, sans-serif;
+    background-color: #343a40;
+    margin-top: 5%;
+    color: #f8f9fa;
+}
+
+.col.right {
+    text-align: right;
+}
+
+.main-jumbo {
+    min-height: 65vh;
+}
+
+.semi-opaque {
+    opacity: .99;
+}
+
+.nav-icon {
+    height: 2.5rem;
+}
+
+.navbar {
+    font-family: Roboto, sans-serif;
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
+.jumbo-adjust {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+}
+
+.marginalize {
+    margin: 5px;
+}
