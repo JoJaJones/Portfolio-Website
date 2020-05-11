@@ -1,0 +1,12 @@
+{% extends "core_content.html" %}
+
+{% block core_content %}
+    {% for entry in blog_entries %}
+        <div class="jumbotron bg-dark text-light semi-opaque main-jumbo">
+            <div class="row"><h2 class="display-4 col">{{ entry.title }}</h2><p class="col right">{{ entry.date }}</p></div>
+            {% for item in entry.text %}
+                {{ item }}
+            {% endfor %}
+        </div>
+    {% endblock %}
+{% endblock %}

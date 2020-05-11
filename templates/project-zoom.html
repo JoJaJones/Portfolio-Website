@@ -1,5 +1,7 @@
 {% extends "core_content.html" %}
 
 {% block content %}
-
+    {% for piece in description %}
+        {{ piece }}
+    {% endfor %}
 {% endblock %}
