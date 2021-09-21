@@ -24,7 +24,7 @@ PROJECT_DICT = {
     THE_AWAKENING: Project(THE_AWAKENING, "text based adventure game", ["C++"], "https://github.com/JoJaJones/The-Awakening", "https://repl.it/@JoJaJones/The-Awakening?lite=true", "repl.it"),
     PORTFOLIO: Project(PORTFOLIO, "this website", ["flask", "bootstrap", "CSS", "HTML", "JavaScript"], "https://github.com/JoJaJones/Portfolio-Website"),
     SPACEBAR_INVADERS: Project(SPACEBAR_INVADERS, "webpage and JS game", ["HTML", "CSS", "JavaScript"], "https://github.com/JoJaJones/SpacebarInvaders", "https://jojajones.github.io", "github.io"),
-    SMACK_CHAT: Project(SMACK_CHAT, "slack clone", ["Kotlin", "Android Studio", "XML"], "https://bitbucket.org/planetflamingunicorn/smackchat/src/master/", None, None, "BitBucket"),
+    SMACK_CHAT: Project(SMACK_CHAT, "slack clone", ["Kotlin", "Android Studio", "XML"], "https://bitbucket.org/planetflamingunicorn/smackchat/src/master/", git_service_name="BitBucket"),
     MINUTES_TO_MIDNIGHT: Project(MINUTES_TO_MIDNIGHT, "console timer app", ["C++", "threads"], "https://github.com/JoJaJones/MinutesToMidnight", "https://repl.it/@JoJaJones/MinutesToMidnight", "repl.it"),
     CA_RULES: Project(CA_RULES, "elementary cellular automata generator", ["Python"], "https://github.com/JoJaJones/ElementaryCellularAutomata", "https://repl.it/@JoJaJones/CARules", "repl.it"),
     FAST_SQRT: Project(FAST_SQRT, "fast square root approximator", ["C++"], "https://github.com/JoJaJones/FastSquareRoot")
@@ -35,3 +35,9 @@ for item in PROJECT_DICT:
     PROJECT_TITLE_LIST.append(item)
 PROJECT_TITLE_LIST.sort()
 
+
+BG_PATH = "../static/alex-wong-l5Tzv1alcps-unsplash.jpg"
+LOGO_PATH = "../static/freeLogo.jpeg"
+TWITTER = "https://twitter.com/SherlockJonesPI"
+GITHUB = "https://github.com/JoJaJones/The-Awakening"
+LINKED_IN = "https://www.linkedin.com/in/jojajones/"

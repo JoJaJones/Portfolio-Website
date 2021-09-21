@@ -1,3 +1,3 @@
 function loadProjectPage(project){
-    // console.log(project)
+    console.log(project)
 }
